@@ -1,5 +1,5 @@
 # User specific & automatically generated files #
 #################################################
 /node_modules
-/gulpfiles.js
+gulpfiles.js
 /package-lock.json
