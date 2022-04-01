@@ -1,0 +1,143 @@
+.header {
+	position: relative;
+	padding-top: 30px;
+	z-index: 10;
+	&__logo {
+		position: absolute;
+		padding-right: 65px;
+		top: 25px;
+		left: 15px;
+	}
+	&__navigation {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		margin-left: 170px;
+		@media (max-width: 920px) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin-top: -250%;
+			margin-left: 0px;
+			transition: all 0.3s ease-in-out 0s;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			max-height: 100vh;
+			padding-top: 15px;
+			background-color: #4A5FCF;
+			border-bottom: 1px solid #fdfdfd;
+			overflow: scroll;
+		}
+	}
+	&__menu-icon {
+		position: absolute;
+		top:35px;
+		right: 45px;		
+		@media (max-width: 920px) {
+			display: block;
+		}
+	}
+	&__menu {
+		padding-left: 65px;
+		margin: 0;
+	}
+	&__user {
+		margin-left: auto;		
+		@media (max-width: 920px) {
+			margin-right: auto;
+		}
+	}
+}
+
+/** MENU TOP **/
+.top-menu {
+	margin: 0;
+	padding: 0;
+	@media (max-width: 920px) {
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid #fdfdfd;
+	}
+	&__item {
+		display: inline-block;
+		padding-right: 30px;
+		@media (max-width: 920px) {
+			display: block;
+			padding: 20px;
+		}
+	}
+	&__link {
+		line-height: 18px;
+		@media (max-width: 920px) {
+			font-size: 24px;
+			color: #fdfdfd;
+		}
+		&--active {
+			color: #4A5FCF;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #4A5FCF;
+			@media (max-width: 920px) {
+				color: #fdfdfd;
+				border-bottom: 1px solid #fdfdfd;
+			}
+		}
+		&--accent {
+			color: #FB0F39;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/** MENU USER **/
+.user {
+	margin: 0 0 0 auto;
+	padding: 0;
+	@media (max-width: 920px) {
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid #fdfdfd;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item {
+		display: inline-block;
+		padding-right: 25px;		
+		@media (max-width: 1135px) {
+			padding-right: 5px;
+		}
+		@media (max-width: 920px) {
+			padding: 20px;
+		}
+		&--last {
+			padding-right: 20px;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		@media (max-width: 920px) {
+			font-size: 24px;
+			color: #fdfdfd;
+		}
+	}
+	&__icon {
+		padding-right: 10px;
+		width: 16px;
+		height: 18px;
+	}
+	&__caption {		
+		@media (max-width: 1135px) {
+			padding-right: 2px;
+		}		
+		@media (max-width: 1100px) {
+			display: none;
+		}		
+		@media (max-width: 920px) {
+			display: block;
+		}
+		
+	}
+}

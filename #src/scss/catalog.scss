@@ -1,0 +1,27 @@
+.catalog {
+    padding-top: 120px;
+    &__headline {
+        display: flex;   
+        align-items: baseline;
+        flex-shrink: 1;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    &__title {
+        margin-right: auto;
+    }
+    &__link {
+        margin-left: auto;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 40px;
+        @media (max-width: 1280px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 610px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

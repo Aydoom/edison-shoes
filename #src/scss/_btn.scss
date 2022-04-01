@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;    
+    box-sizing: border-box;
+    max-width: 210px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    &--primary {
+        color: #FDFDFD;
+        background-color: #4D66EC;
+    }
+    &--secondary {
+        color: #2F3250;
+        border: 1px solid #4D66EC;
+    }
+    &--small {
+        max-width: 130px;
+        max-height: 40px;
+        padding: 13px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}

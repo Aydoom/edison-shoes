@@ -1,0 +1,12 @@
+.social{
+    display: flex;
+    flex-direction: column;
+    &__link{
+        display: block;
+        padding-bottom: 30px;
+    }
+    &__img{
+        width: 22px;
+        height: 22px;
+    }
+}

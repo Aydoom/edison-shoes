@@ -1,0 +1,23 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1 0 100%;
+    height: 100vh;
+    &__title {
+        font-weight: 400;
+        font-size: 76px;
+        line-height: 76px;
+        color: #4A5FCF;
+        padding-bottom: 20px;
+    }
+    &__desc {
+        font-size: 22px;
+        line-height: 30.8px;
+        padding-bottom: 55px;
+    }
+    &__btn {
+        padding-bottom: 55px;
+    }
+}
